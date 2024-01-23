@@ -1,2 +1,2 @@
-# AWS_EBS_VOL_MODIFICATION
-this is the basic real time conversion of AWS EBS volume from GP2 to GP3 on the creation
+## AWS-Lambda-Real-time-EBS-volume-modifiaction
+This is the AWS Lambda code to modified EBS volume from type GP2 to GP3 on the Real time, In this i have created a event Bus where a EBS volume Creation Event will trigger a lambda function which will convert the EBS vloume to GP3 type automatically. In the AWS lambda , i have created a python function which will first get the ebs volume arn id using string split method then this will return the volume id to boto3 client which will modify ebs volume
